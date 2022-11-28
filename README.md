@@ -7,4 +7,4 @@ This repo is a collection of getting started documents each catering for a speci
 - [x] Django
 - [ ] React
 
-**Note**: Currently working on docs will be denoted by - [x]
+**Note**: Currently working on docs will be denoted by :heavy_check_mark:

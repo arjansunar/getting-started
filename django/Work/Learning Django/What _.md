@@ -1,16 +1,17 @@
 # What ?
 
-Django is a **MVT** framework used to build backend of various websites 
+Django is a **MVT** framework used to build backend of various websites
 
-## MVT 
-> M - Model ( data representation and manipulation layer )
-> V -  View ( works more like a **Controller** that defines what function to run once a route is visited )
-> T - Template ( the actual view layer with files in HTML format )
+## MVT
 
-#### Models
+`M` - Model ( data representation and manipulation layer )  
+`V`- View ( works more like a **Controller** that defines what function to run once a route is visited )  
+`T` - Template ( the actual view layer with files in HTML format )
 
-Models represent data in our database in the form of python Objects. 
- 
+### `M`odels
+
+Models represent data in our database in the form of python Objects.
+
 ```python
 
 from django.db import models
@@ -26,13 +27,13 @@ class Task(models.Model):
     def __str__(self):
         return self.title
 
-    # meta data to show what to order the items by 
+    # meta data to show what to order the items by
     class Meta:
         ordering =['completed']
-		
+
 ```
 
-The above code creates a Task table with user, title ,completed, created_at fields 
+The above code creates a Task table with user, title ,completed, created_at fields
 
 ```js
 Task {
@@ -43,31 +44,32 @@ Task {
 }
 ```
 
-### Views
-Views are the function you define that runs when a particular route is viewed. 
+### `V`iews
 
-```python 
+Views are the function you define that runs when a particular route is viewed.
+
+```python
 # Example route -> /blog
 
 # file urls.py
 urlpatterns= [path("/blog"), view = views.handleBlog]
 # ------------------------------------------------------
 
-# file views.py 
+# file views.py
 """
 this function is triggered when /blog page is accessed
 """
-def handleBlog(request): 
+def handleBlog(request):
 	return HttpResponse("Blog page")
 
 ```
 
-`Note:  In Django, Views != HTML ` 
+`Note: In Django, Views != HTML `
 
-
-### Templates
+### `T`emplates
 
 Templates are the static files like HTML that is to be rendered when a route is accessed. Django provides further functionality by embedding logic in templates through [JInja](https://jinja.palletsprojects.com/en/3.1.x/templates/).
+
 ```django
 <!DOCTYPE html>
 <html lang="en">
@@ -91,17 +93,12 @@ Templates are the static files like HTML that is to be rendered when a route is 
 
 ```
 
-### Default folder structure 
-*Folder structure for a project named Blog*
+### Default folder structure
+
+_Folder structure for a project named Blog_
 ![a98694bacdfde68cb6396153d8894c79.png](../../_resources/a98694bacdfde68cb6396153d8894c79.png)
 
-
- *  __init\__.py  -> indicates the folder is a module
- * asgi.py & wsgi.py -> communicates with the web server 
- * settings.py -> place to configure project settings (stuff like: DB conf, SMTP conf and more)
- * urls.py -> place to define url routes 
- 
-
-
-
-
+- \_\_init\_\_.py -> indicates the folder is a module
+- asgi.py & wsgi.py -> communicates with the web server
+- settings.py -> place to configure project settings (stuff like: DB conf, SMTP conf and more)
+- urls.py -> place to define url routes

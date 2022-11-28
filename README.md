@@ -1,10 +1,10 @@
 <h1 align="center">GETTING STARTED</h1>
 
-This repo is a collection of getting started documents each catering for a specific topic.
+This repo is a collection of `getting started` documents each catering for a specific topic.
 
-## Docs Todo
+## :bicyclist: Docs todo
 
 - [x] [Django](./django/README.md)
 - [ ] React
 
-**Note**: Currently working on [Django 🐍](./django/README.md)
+> **Note**: Currently working on [Django 🐍](./django/README.md)

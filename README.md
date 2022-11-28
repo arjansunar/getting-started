@@ -4,7 +4,7 @@ This repo is a collection of getting started documents each catering for a speci
 
 ## Docs Todo
 
-- [x] Django
+- [x] [Django](./django/README.md)
 - [ ] React
 
 **Note**: Currently working on docs will be denoted by :heavy_check_mark:

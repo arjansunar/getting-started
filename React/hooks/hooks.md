@@ -110,7 +110,7 @@ const [isPending, startTransition] = useTransition();
 ```
 
 ```js
-startTransition(()=> {...}) // allows to marks the callback passed as a transition
+startTransition(()=> {...}) // allows to mark the callback passed as a transition
 ```
 
 `isPending` can be useful to show a fallback UI or a pending state

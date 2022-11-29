@@ -1,1 +1,1 @@
-# [Celery](https://docs.celeryq.dev/en/stable/django/first-steps-with-django.html) :green_salad:
+# :green_salad: [Celery](https://docs.celeryq.dev/en/stable/django/first-steps-with-django.html)

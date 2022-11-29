@@ -85,3 +85,32 @@ There are various hooks used in React. Here the most commonly used hooks are des
 4. [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback)
 5. [useMemo](https://reactjs.org/docs/hooks-reference.html#usecallback)
 6. [useRef](https://reactjs.org/docs/hooks-reference.html#usecallback)
+
+## React 18 concurrency hooks
+
+The concurrency hooks enable developers to make priorities to state updates. For example: developers can prioritize
+the changes in form to show immediate feedback to users and the side effect of form data can be pended. Therefore a form
+that renders 10000 elements on each change can be made more responsive by rendering the user changes in the form immediately and passes a deffered value (`useDefferedValue`) to show the changes in 10000 elements.
+
+1. [useDefferedValue](https://reactjs.org/docs/hooks-reference.html#usedeferredvalue)
+   Accepts a value and returns a new copy of the value that will defer to more urgent updates. It marks the value
+   it takes as a less priority state update and lets other state updates to run before it.
+
+example:
+
+```js
+const deferredValue = useDeferredValue(value);
+```
+
+2. [useTransition](https://reactjs.org/docs/hooks-reference.html#usetransition)
+   Returns a stateful value for the pending state of the transition, and a function to start it.
+
+```js
+const [isPending, startTransition] = useTransition();
+```
+
+```js
+startTransition(()=> {...}) // allows to marks the callback passed as a transition
+```
+
+`isPending` can be useful to show a fallback UI or a pending state

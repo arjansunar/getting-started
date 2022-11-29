@@ -7,6 +7,6 @@
 
 ## Contents
 
-- [Introduction](./Work/Learning%20Django/What%20_.md)
-- [SSO](<./Work/Learning%20Django/Authentication%20and%20permissions%20(DRF)/SSO/SSO.md>)
-- [Resources](/django/Work/Learning%20Django/Resources/Resources.md)
+- [Introduction](./Learning%20Django/What%20_.md)
+- [SSO](<./Learning%20Django/Authentication%20and%20permissions%20(DRF)/SSO/SSO.md>)
+- [Resources](/django/Learning%20Django/Resources/Resources.md)

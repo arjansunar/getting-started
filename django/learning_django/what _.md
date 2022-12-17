@@ -96,7 +96,7 @@ Templates are the static files like HTML that is to be rendered when a route is 
 ### Default folder structure
 
 _Folder structure for a project named Blog_
-![a98694bacdfde68cb6396153d8894c79.png](../../_resources/a98694bacdfde68cb6396153d8894c79.png)
+![a98694bacdfde68cb6396153d8894c79.png](../_resources/a98694bacdfde68cb6396153d8894c79.png)
 
 - \_\_init\_\_.py -> indicates the folder is a module
 - asgi.py & wsgi.py -> communicates with the web server

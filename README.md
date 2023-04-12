@@ -6,5 +6,6 @@ This repo is a collection of `getting started` documents each catering for a spe
 
 - [x] [Django](./django/README.md)
 - [ ] React
+- [ ] Rxjs
 
-> **Note**: Currently working on [Django 🐍](./django/README.md)
+> **Note**: Currently working on [Rxjs 🐟](./rx-js/README.md)
